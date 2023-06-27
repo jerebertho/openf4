@@ -36,7 +36,9 @@ benchmark_cp_d3_n6_p6 benchmark_cp_d4_n6_p6 benchmark_cp_d3_n7_p7 \
 benchmark_sdk benchmark_all benchmark_vor benchmark_sot \
 benchmark_klyz12 benchmark_klyz22 benchmark_klyz13 benchmark_klyz23 \
 benchmark_noon6 benchmark_noon7 benchmark_noon8 \
-benchmark_gametwo7
+benchmark_gametwo7 \
+benchmark_cim3R_plus_linform benchmark_cim3_5R_plus_linform \
+benchmark_cim4R_plus_linform
 
 
 if OPENF4_HAVE_GIVARO
@@ -88,7 +90,9 @@ benchmark_noon6_SOURCES = benchmark-noon6.cpp
 benchmark_noon7_SOURCES = benchmark-noon7.cpp
 benchmark_noon8_SOURCES = benchmark-noon8.cpp
 benchmark_gametwo7_SOURCES = benchmark-gametwo7.cpp
-
+benchmark_cim3R_plus_linform_SOURCES = benchmark-cim3R_plus_linform.cpp
+benchmark_cim3_5R_plus_linform_SOURCES = benchmark-cim3_5R_plus_linform.cpp
+benchmark_cim4R_plus_linform_SOURCES = benchmark-cim4R_plus_linform.cpp
 
 if OPENF4_HAVE_GIVARO
 benchmark_givaro_modular_integer_SOURCES = benchmark-givaro-modular-integer.cpp
