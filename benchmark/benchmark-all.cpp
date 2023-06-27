@@ -20,7 +20,7 @@
 /**
  *  \file benchmark-long.cpp
  *  \example benchmark-long.cpp
- *  \brief Benchmark with integer 64 bits coefficients.
+ *  \brief Benchmark with integer 16 bits coefficients.
  *  \ingroup benchmark
  *  \author Vanessa VITSE, Antoine JOUX, Titouan COLADON
  */
@@ -40,8 +40,8 @@ int F4::NB_THREAD=1;
 #endif
 
 // Init element-prime tools
-typedef ElementPrime<int64_t> eltType;
-int64_t modulo=1073741827LL;
+typedef ElementPrime<int16_t> eltType;
+int16_t modulo=3;
 
 
 int allF4(bool magma)
@@ -51,7 +51,7 @@ int allF4(bool magma)
     cout << "#########################################################" << endl << endl;
     
     // Init element-prime tools
-    eltType::setModulo(3);
+    eltType::setModulo(modulo);
     
     // Number of generator
     int nbGen;

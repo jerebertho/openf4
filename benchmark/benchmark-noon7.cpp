@@ -47,7 +47,7 @@ int64_t modulo=1073741827LL;
 int noon7F4(bool magma)
 {
     cout << "#########################################################" << endl;
-    cout << "#                         NOON7                        #" << endl;
+    cout << "#                         NOON7                         #" << endl;
     cout << "#########################################################" << endl << endl;
     
     // Init element-prime tools
@@ -83,7 +83,7 @@ int noon7F4(bool magma)
     polNoon7.emplace_back("x1+2*x2+3*x3+4*x4+5*x5+6*x6+7*x7+t");
 
     // Create noon7 ideal;
-    Ideal<eltType> noon7(polNoon7, 8, 100000);
+    Ideal<eltType> noon7(polNoon7, 8, 10000000);
     
     // Compute a reduced groebner basis;
     nbGen=noon7.f4();

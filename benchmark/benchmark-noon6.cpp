@@ -47,7 +47,7 @@ int64_t modulo=1073741827LL;
 int noon6F4(bool magma)
 {
     cout << "#########################################################" << endl;
-    cout << "#                         NOON6                        #" << endl;
+    cout << "#                         NOON6                         #" << endl;
     cout << "#########################################################" << endl << endl;
     
     // Init element-prime tools
